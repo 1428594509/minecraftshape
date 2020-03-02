@@ -33,7 +33,7 @@ class MinecraftMath3DShape:
         :param int y0:
             The y position of the start point.
 
-        :param int z:
+        :param int z0:
             The z position of the start point.
 
         :param int length:
@@ -64,7 +64,7 @@ class MinecraftMath3DShape:
         :param int y0:
             The y position of the start point.
 
-        :param int z:
+        :param int z0:
             The z position of the start point.
 
         :param int length:
