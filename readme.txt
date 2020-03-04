@@ -59,7 +59,7 @@ function index:
        blockType------The block id.
        blockData------The block data value, defaults to ``0``.
      Fomula:
-       y=tan(x^2 + y^2)/coefficience
+       y=tan((x^2 + y^2) *Pi/180) /coefficience
 
 
 
