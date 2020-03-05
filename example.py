@@ -27,8 +27,12 @@ Middle = mc.player.getTilePos()
 #mathshape.drawCurve3(Middle.x, Middle.y+20, Middle.z,LENGTH, 100,block.DIAMOND_BLOCK.id)
 #mathshape.drawCurve3(Middle.x, Middle.y+20, Middle.z,LENGTH, 100,block.AIR.id)
 
-mathshape.drawCurve4(Middle.x, Middle.y+50, Middle.z,LENGTH, 100,block.DIAMOND_BLOCK.id)
+#mathshape.drawCurve4(Middle.x, Middle.y+50, Middle.z,LENGTH, 100,block.DIAMOND_BLOCK.id)
 #mathshape.drawCurve4(Middle.x, Middle.y+50, Middle.z,LENGTH, 100,block.AIR.id)
+
+mathshape.drawCurve5(Middle.x, Middle.y, Middle.z,LENGTH, 100,block.DIAMOND_BLOCK.id)
+#mathshape.drawCurve5(Middle.x, Middle.y, Middle.z,LENGTH, 100,block.AIR.id)
+
 
 #if buried,just shuttle
 #mc.player.setTilePos(Middle.x+100,Middle.y+20,Middle.z+100)

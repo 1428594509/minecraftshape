@@ -61,7 +61,17 @@ function index:
      Fomula:
        y=tan((x^2 + y^2) *Pi/180) /coefficience
 
-
+5.drawCurve5(self, x0, y0, z0, length, coefficience, blockType, blockData=0)
+     param:
+       x0-------------The x position of the start point.
+       y0-------------The y position of the start point.
+       z0-------------The z position of the start point.
+       length---------The length of the x direction and z direction.
+       coefficience---The scale factor 
+       blockType------The block id.
+       blockData------The block data value, defaults to ``0``.
+     Fomula:
+       y=log10(x^2 + y^2)*1000.0/coefficience
 
 
 
