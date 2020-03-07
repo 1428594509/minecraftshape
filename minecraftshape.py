@@ -198,6 +198,37 @@ class MinecraftMath3DShape:
 
         for x in range(-length,length):
             for z in range(-length,length):
-                if x!=0 or z!=0:
-                    y=math.cos((x+z)*math.pi/180)*1000.0/coefficience
-                    self.mc.setBlock(x0+x,y0+y,z0+z,blockType,blockData)
+                y=math.cos((x+z)*math.pi/180)*1000.0/coefficience
+                self.mc.setBlock(x0+x,y0+y,z0+z,blockType,blockData)
+
+
+    
+    def drawCurve7(self, x0, y0, z0, length, coefficience, blockType, blockData=0):
+        """
+        :param int x0:
+            The x position of the start point.
+
+        :param int y0:
+            The y position of the start point.
+
+        :param int z0:
+            The z position of the start point.
+
+        :param int length:
+            The length of the x + -direction and z + -direction.
+            
+        :param int coefficience:
+            The scale factor
+              
+        :param int blockType:
+            The block id.
+
+        :param int blockData:
+            The block data value, defaults to ``0``.
+        """
+
+        for x in range(-length,length):
+            for z in range(-length,length):
+                y=math.cos((x**2+z**2)*math.pi/180)*1000.0/coefficience
+                self.mc.setBlock(x0+x,y0+y,z0+z,blockType,blockData)
+    

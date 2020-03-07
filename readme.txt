@@ -13,7 +13,7 @@ function index:
 
 
    MinecraftMath3DShape
-  1.drawCurve1(self, x0, y0, z0, length, coefficience, blockType, blockData=0)
+ 1.drawCurve1(self, x0, y0, z0, length, coefficience, blockType, blockData=0)
      param:
        x0-------------The x position of the start point.
        y0-------------The y position of the start point.
@@ -25,7 +25,7 @@ function index:
      Fomula:
        y=(x^2 + z^2)/coefficience
 
-  2.drawCurve1(self, x0, y0, z0, length, coefficience, blockType, blockData=0)
+ 2.drawCurve1(self, x0, y0, z0, length, coefficience, blockType, blockData=0)
      param:
        x0-------------The x position of the start point.
        y0-------------The y position of the start point.
@@ -83,6 +83,17 @@ function index:
        blockType------The block id.
        blockData------The block data value, defaults to ``0``.
      Fomula:
-       y=cos((x + y)*Pi/180) *1000.0/coefficience
+       y=cos(x + y)*1000.0/coefficience
 
+7.drawCurve7(self, x0, y0, z0, length, coefficience, blockType, blockData=0)
+     param:
+       x0-------------The x position of the start point.
+       y0-------------The y position of the start point.
+       z0-------------The z position of the start point.
+       length---------The length of the x direction and z direction.
+       coefficience---The scale factor 
+       blockType------The block id.
+       blockData------The block data value, defaults to ``0``.
+     Fomula:
+       y=cos(x^2 + y^2)*1000.0/coefficience
 
