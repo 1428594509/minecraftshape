@@ -232,3 +232,34 @@ class MinecraftMath3DShape:
                 y=math.cos((x**2+z**2)*math.pi/180)*1000.0/coefficience
                 self.mc.setBlock(x0+x,y0+y,z0+z,blockType,blockData)
     
+    def drawMobius(self, x0, y0, z0, width, coefficience, blockType, blockData=0):
+        """
+        :param int x0:
+            The x position of the start point.
+
+        :param int y0:
+            The y position of the start point.
+
+        :param int z0:
+            The z position of the start point.
+
+        :param int width:
+            The width of Mobius band.
+            
+        :param int coefficience:
+            The scale factor
+              
+        :param int blockType:
+            The block id.
+
+        :param int blockData:
+            The block data value, defaults to ``0``.
+        """
+
+        for r in range(-width*100,width*100):
+            for t in range(0,int(math.pi)*100):
+                x=math.cos(float(t)/100)*(3+r*math.cos(float(t)/200)/100)*1000/coefficience
+                y=math.sin(float(t)/100)*(3+r*math.cos(float(t)/200)/100)*1000/coefficience
+                z=r*math.sin(float(t)/200)*10/coefficience
+                self.mc.setBlock(x0+x,y0+y,z0+z,blockType,blockData)
+    

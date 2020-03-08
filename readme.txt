@@ -97,3 +97,17 @@ function index:
      Fomula:
        y=cos(x^2 + y^2)*1000.0/coefficience
 
+8.drawMobius(self, x0, y0, z0, width, coefficience, blockType, blockData=0)
+     param:
+       x0-------------The x position of the start point.
+       y0-------------The y position of the start point.
+       z0-------------The z position of the start point.
+       width----------The width of Mobius band.
+       coefficience---The scale factor 
+       blockType------The block id.
+       blockData------The block data value, defaults to ``0``.
+     Fomula:
+       x=Cos[t]*(3+r Cos[t/2])
+       y=Sin[t]*(3+r Cos[t/2])
+       z=r*Sin[t/2]
+         ( -width<r<width,0<t<2Pi )
